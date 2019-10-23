@@ -1,0 +1,25 @@
+PDF Merger and Metadata
+
+at the moment only the single pdf option works the function to do with a config file is in the code but havent fully worked out all of it yet
+
+COMMANDS:
+-h = help
+-i = input directory default input directory is input/
+-o = output directory default output directory is output/
+-C = cover file
+-r = copyright file
+-xml = xml file
+-con = specify a .ini file to run 
+
+EXAMPLES:
+python pdfmer_metv2.py -i /path/to/input -o /path/to/output -C /path/to/cover -r /path/to/copyright -xml /path/to/xml
+
+NOTES:
+the script uses two python pdf libraries one is PyPDF2 and the other is pdfrw 
+
+the pdfrw library does the merging of the different files 
+
+the PyPDF2 library adds the metadata to the pdf that was made by pdfrw
+
+
+a small thing is that while running the terminal will be outputting something that ends with cpdf.sh this can be ignored it is still doing what is is meant to do.
